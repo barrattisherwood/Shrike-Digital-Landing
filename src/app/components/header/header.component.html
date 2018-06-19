@@ -1,3 +1,8 @@
-<p>
-  header works!
-</p>
+<header [ngClass]="{'fixed': headerFixed}">
+  <div class="header-top" appGetHeight (elementHeight)="setHeaderHeight($event)">
+    <div class="slogan">Innovation, reimagined</div>
+  </div>
+  <div class="header-main">
+    Shrike digital
+  </div>
+</header>
