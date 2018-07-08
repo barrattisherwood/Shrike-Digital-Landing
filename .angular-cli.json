@@ -23,7 +23,7 @@
       ],
       "stylePreprocessorOptions": {
         "includePaths": [
-          "../node_modules/bootstrap/scss"
+          "sass/styles.scss"
         ]
       },
       "scripts": [],

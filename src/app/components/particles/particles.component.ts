@@ -17,7 +17,22 @@ export class ParticlesComponent implements OnInit {
       color: ['#ffffff'],
       minDistance: 120,
       connectParticles: true,
-      sizeVariations: 3    
+      sizeVariations: 3,
+      responsive: [
+        {
+          breakpoint: 1024,
+          options: {
+            maxParticles: 200,
+            color: '#48F2E3',
+            connectParticles: false
+          }
+        }, {
+          breakpoint: 320,
+          options: {
+            maxParticles: 0 // disables particles.js
+          }
+        }
+      ]      
     });
   }
 

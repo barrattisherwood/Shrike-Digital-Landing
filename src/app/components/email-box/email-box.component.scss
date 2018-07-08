@@ -1,0 +1,25 @@
+input {
+    border: 1px solid #0e1f25;
+    background: #172c33;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+    flex: 1;
+    padding: 4px 19px;
+}
+
+.email-box {
+    position: relative;
+    display: flex;
+    margin-top: 38px;
+}
+
+button {    
+    font-size: 18px;
+    color:#050505;
+    background: #b7c4c9;
+    padding: 4px 19px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
