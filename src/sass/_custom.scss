@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: rgb(15, 32, 39);
+    background: #2b3c43;
 }
 
 h1 {
@@ -27,3 +27,9 @@ h2 {
     height: 100%;
     z-index: -1;
 }  
+svg {
+    position: absolute;
+    width: 339px;
+    top: -60px;
+    left: 34px;
+}

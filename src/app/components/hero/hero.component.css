@@ -4,10 +4,11 @@
 }
 .logo {
     border-radius: 50%;
-    background: #d7dde2;
+    background: #2b3c43;
+    /* triad: #433f2b #432b33 */
     width: 250px;
     height: 250px;
-    margin-bottom: 32px;  
+    margin-bottom: -17px;  
     margin-left: auto;
     margin-right: auto;
 }
