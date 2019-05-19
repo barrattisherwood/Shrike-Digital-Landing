@@ -37,3 +37,36 @@ svg {
     top: -60px;
     left: 34px;
 }
+
+@media screen and (max-width: 700px) {
+    svg {
+        position: absolute;
+        width: 271px;
+        top: auto;
+        left: auto;
+    }
+    .hero-container {
+        top: 41%;
+    }    
+}
+
+@media only screen 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+    #hero-container {
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        } 
+        .logo {
+            margin-bottom: -37px;
+        }
+        .email-box {
+            margin-top: 10px;
+        }
+    } 
+}
