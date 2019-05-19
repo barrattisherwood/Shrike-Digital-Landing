@@ -37,7 +37,7 @@ app.post('/send', function (req, res) {
   let copyToSender = req.body.contactFormCopy;
 
   let mailOptions = {
-    to: ['info@shrikedigital.com'], // Enter here the email address on which you want to send emails from your customers
+    to: ['info@shrikedigital.com', 'barratt@shrikedigital.com', 'rob@shrikedigital.com', 'ireyan@shrikedigital.com'], // Enter here the email address on which you want to send emails from your customers
     from: senderName,
     subject: messageSubject,
     text: messageText,
