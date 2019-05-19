@@ -1,4 +1,11 @@
-<div class="email-box">
-  <input placeholder="Your Email" type="email" />
-  <button type="submit">Submit</button>
-</div>
+<form class="email-box full-width" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+  <!-- Email -->
+  <input type="email" formControlName="contactFormEmail" id="defaultContactFormEmail" mdbInput
+    class="form-control mb-4" placeholder="Your Email">
+
+  <!-- Send button -->
+  <button mdbBtn color="info" outline="true" block="true" class="z-depth-0 my-4 waves-effect"
+    mdbWavesEffect type="submit" [disabled]="disabledSubmitButton">Send</button>
+
+</form>  

@@ -20,9 +20,13 @@ export class EmailBoxComponent {
     }
   }
 
-  constructor(private fb: FormBuilder, private connectionService: ConnectionService) { }
+  constructor(private fb: FormBuilder, private connectionService: ConnectionService) {
+    this.contactForm = fb.group({
+      'contactFormEmail': ['', Validators.compose([Validators.required, Validators.email])],
+    });
+  }    
 
-  onSubmit() {
+   onSubmit() {
     this.connectionService.sendMessage(this.contactForm.value).subscribe(() => {
       alert('Your message has been sent.');
       this.contactForm.reset();
