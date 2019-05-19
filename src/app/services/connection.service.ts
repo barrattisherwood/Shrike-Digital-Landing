@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ConnectionService {
-  url = 'http://www.shrike-digital.com/:8080/send';
+  url = 'http://www.shrike-digital.com/send';
   constructor(private http: HttpClient) { }
 
   sendMessage(messageContent: any) {
